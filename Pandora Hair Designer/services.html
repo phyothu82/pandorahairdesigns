@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Pandora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #fcfcfc; color: #333; }
+        
+        header {
+            background-color: #7a1b30;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .back-btn { color: #d4af37; text-decoration: none; font-weight: bold; }
+
+        .container { padding: 50px 10%; text-align: center; }
+        h2 { color: #7a1b30; margin-bottom: 40px; font-size: 32px; }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .service-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: left;
+            border-left: 5px solid #d4af37;
+            transition: 0.3s;
+        }
+
+        .service-item:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+
+        .service-item i { font-size: 30px; color: #7a1b30; margin-bottom: 15px; }
+
+        .service-item h4 { margin: 10px 0; font-size: 22px; color: #7a1b30; }
+
+        .price { color: #d4af37; font-weight: bold; font-size: 18px; display: block; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="font-size: 24px; font-weight: bold; color: #d4af37; font-family: 'Brush Script MT', cursive;">Pandora Hair Services</div>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> ရှေ့စာမျက်နှာသို့ ပြန်ရန်</a>
+    </header>
+
+    <div class="container">
+        <h2>ကျွန်ုပ်တို့၏ ဝန်ဆောင်မှုများ</h2>
+        
+        <div class="services-list">
+            <div class="service-item">
+                <i class="fas fa-cut"></i>
+                <h4>ဆံပင်ညှပ်ခြင်း (Hair Cut)</h4>
+                <p>လူကြီး၊ လူငယ် နှင့် ကလေးများအတွက် ခေတ်မီဆံပင်ပုံစံ အမျိုးမျိုးကို စိတ်တိုင်းကျ ညှပ်ပေးပါသည်။</p>
+                <span class="price">၁၀,၀၀၀ ကျပ် မှ စတင်၍</span>
+            </div>
+
+            <div class="service-item">
+                <i class="fas fa-magic"></i>
+                <h4>ဆံပင်ဆေးဆိုးခြင်း (Hair Color)</h4>
+                <p>အရည်အသွေးမြင့် ဆိုးဆေးများကိုသာ အသုံးပြုပြီး သင့်အသားအရေနှင့် လိုက်ဖက်မည့် အရောင်များကို ဖန်တီးပေးပါသည်။</p>
+                <span class="price">၈၀,၀၀၀ ကျပ် မှ စတင်၍</span>
+            </div>
+
+            <div class="service-item">
+                <i class="fas fa-sparkles"></i>
+                <h4>ဆံသားအားဖြည့်ခြင်း (Treatment)</h4>
+                <p>ပျက်စီးနေသော ဆံသားများကို ပြန်လည်ကောင်းမွန်လာစေရန် ပေါင်းတင်ခြင်းနှင့် အားဖြည့်ခြင်းများ ဆောင်ရွက်ပေးပါသည်။</p>
+                <span class="price">၂၅,၀၀၀ ကျပ် မှ စတင်၍</span>
+            </div>
+
+            <div class="service-item">
+                <i class="fas fa-wind"></i>
+                <h4>ဆံပင်ဖြောင့်/ကောက်ခြင်း (Straight/Perm)</h4>
+                <p>ဆံသားမပျက်စီးစေဘဲ သဘာဝအတိုင်း လှပနေစေမည့် ဖြောင့်စက်နှင့် ကောက်စက် ဝန်ဆောင်မှုများ။</p>
+                <span class="price">၈၀,၀၀၀ ကျပ် မှ စတင်၍</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

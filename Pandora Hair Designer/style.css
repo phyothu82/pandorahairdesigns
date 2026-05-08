@@ -1,0 +1,65 @@
+/* style.css ဖိုင်ထဲက code နမူနာ */
+header {
+    background-color: #7a1b30;
+}
+.btn-book {
+    background-color: #d4af37;
+}
+/* --- Mobile Responsive Fixes --- */
+@media (max-width: 768px) {
+    /* ၁။ ဘေးတိုက်လျှောတာကို ကာကွယ်မယ် */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ၂။ Header ကို ဖုန်းနဲ့တော်အောင် ပြင်မယ် */
+    header {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+
+    .logo-container div {
+        font-size: 40px !important; /* Logo ဆိုဒ်ကို လျှော့လိုက်ပါတယ် */
+        margin-bottom: 10px;
+    }
+
+    /* ၃။ Menu စာသားတွေကို တန်းစီမယ် */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    /* ၄။ Hero Section (စာသားနဲ့ ခလုတ်) */
+    .hero h2 {
+        font-size: 2rem !important;
+        padding: 0 10px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    /* ၅။ Services (ဝန်ဆောင်မှုများ) ကို တစ်ခုချင်းစီ ပြမယ် */
+    .service-grid, .contact-container {
+        grid-template-columns: 1fr !important;
+        padding: 20px 5%;
+    }
+
+    /* ၆။ Floating Chat Button ကို ဆိုဒ်ချုံ့မယ် */
+    .chat-float {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
